@@ -1,0 +1,23 @@
+Model,Hyperparameters,PCA,Accuracy Mean,Accuracy Std,Balanced Accuracy Mean,F1-weighted Mean,F1-weighted Std,F1-macro Mean,Training Time Mean
+Logistic Regression,"max_iter=1000, random_state=42, C=0.5",No PCA,0.8419,0.0038,0.8417,0.8421,0.0038,0.8405,1.2538
+Logistic Regression,"max_iter=1000, random_state=42, C=0.5",With PCA,0.7938,0.0018,0.7921,0.7939,0.0019,0.7916,0.2055
+Logistic Regression,"max_iter=1000, random_state=42, C=1.0, class_weight=balanced",No PCA,0.8431,0.0029,0.8457,0.8435,0.0029,0.8423,1.464
+Logistic Regression,"max_iter=1000, random_state=42, C=1.0, class_weight=balanced",With PCA,0.7877,0.0027,0.7906,0.7883,0.0027,0.7869,0.3202
+Logistic Regression,"max_iter=1000, random_state=42, C=2.0",No PCA,0.8417,0.0035,0.8416,0.842,0.0035,0.8403,1.3562
+Logistic Regression,"max_iter=1000, random_state=42, C=2.0",With PCA,0.7941,0.0019,0.7924,0.7942,0.002,0.7919,0.2298
+Decision Tree,"random_state=42, max_depth=5, min_samples_leaf=1",No PCA,0.7697,0.0147,0.7789,0.7693,0.016,0.7693,0.3402
+Decision Tree,"random_state=42, max_depth=5, min_samples_leaf=1",With PCA,0.797,0.0099,0.7981,0.7971,0.0102,0.7953,1.2722
+Decision Tree,"random_state=42, max_depth=10, min_samples_leaf=1",No PCA,0.9149,0.0161,0.9198,0.9152,0.0161,0.9146,0.4189
+Decision Tree,"random_state=42, max_depth=10, min_samples_leaf=1",With PCA,0.9418,0.0081,0.9434,0.9419,0.008,0.9413,2.1932
+Decision Tree,"random_state=42, max_depth=20, min_samples_leaf=2",No PCA,0.9963,0.0011,0.9964,0.9963,0.0011,0.9963,0.5307
+Decision Tree,"random_state=42, max_depth=20, min_samples_leaf=2",With PCA,0.987,0.0027,0.9874,0.987,0.0027,0.9868,3.2523
+Decision Tree,"random_state=42, max_depth=None, min_samples_leaf=1",No PCA,0.9985,0.0005,0.9985,0.9985,0.0005,0.9985,0.5054
+Decision Tree,"random_state=42, max_depth=None, min_samples_leaf=1",With PCA,0.9928,0.0005,0.9928,0.9928,0.0005,0.9927,3.8866
+Decision Tree,"random_state=42, max_depth=20, min_samples_leaf=2, class_weight=balanced",No PCA,0.9955,0.001,0.9958,0.9955,0.001,0.9955,0.5568
+Decision Tree,"random_state=42, max_depth=20, min_samples_leaf=2, class_weight=balanced",With PCA,0.986,0.0023,0.9866,0.986,0.0023,0.9859,3.3313
+kNN,"n_neighbors=3, weights=uniform",No PCA,1.0,0.0,1.0,1.0,0.0,1.0,0.1129
+kNN,"n_neighbors=3, weights=uniform",With PCA,0.9999,0.0001,0.9999,0.9999,0.0001,0.9999,0.1362
+kNN,"n_neighbors=5, weights=uniform",No PCA,1.0,0.0,1.0,1.0,0.0,1.0,0.2096
+kNN,"n_neighbors=5, weights=uniform",With PCA,1.0,0.0,0.9999,1.0,0.0,1.0,0.167
+kNN,"n_neighbors=11, weights=distance",No PCA,0.9999,0.0001,0.9999,0.9999,0.0001,0.9999,0.121
+kNN,"n_neighbors=11, weights=distance",With PCA,0.9999,0.0001,0.9999,0.9999,0.0001,0.9999,0.1408
