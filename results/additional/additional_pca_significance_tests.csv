@@ -1,0 +1,13 @@
+Model,Metric,No PCA Mean,PCA95 Mean,Mean Difference (PCA-NoPCA),Wilcoxon p-value,Significant @ 0.05
+Logistic Regression,accuracy,0.842528,0.78753,-0.054998,0.000653,True
+Logistic Regression,balanced_accuracy,0.845145,0.790458,-0.054688,6.1e-05,True
+Logistic Regression,f1_weighted,0.842973,0.788164,-0.054809,6.1e-05,True
+Logistic Regression,f1_macro,0.841774,0.786755,-0.055019,6.1e-05,True
+Decision Tree,accuracy,0.99845,0.992091,-0.006359,0.000647,True
+Decision Tree,balanced_accuracy,0.998419,0.992031,-0.006387,6.1e-05,True
+Decision Tree,f1_weighted,0.99845,0.992091,-0.006359,6.1e-05,True
+Decision Tree,f1_macro,0.998431,0.991995,-0.006436,6.1e-05,True
+kNN,accuracy,0.999973,0.999924,-4.9e-05,0.005888,True
+kNN,balanced_accuracy,0.999969,0.999921,-4.8e-05,0.006459,True
+kNN,f1_weighted,0.999973,0.999924,-4.9e-05,0.007369,True
+kNN,f1_macro,0.999972,0.999923,-5e-05,0.007369,True

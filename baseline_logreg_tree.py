@@ -11,6 +11,9 @@ from sklearn.preprocessing import LabelEncoder, OneHotEncoder, StandardScaler
 from sklearn.tree import DecisionTreeClassifier
 
 
+RESULTS_DIR = "results/initial"
+
+
 def _find_csv_candidates():
     """Return CSV files from project root and MushroomDataset."""
     root_csv = [f for f in os.listdir() if f.lower().endswith(".csv")]
@@ -251,13 +254,16 @@ if __name__ == "__main__":
     results_df, best_configs_df = run_baseline_and_pca_comparison()
     results_report_df = _rounded_for_reporting(results_df, digits=4)
     best_report_df = _rounded_for_reporting(best_configs_df, digits=4)
+    os.makedirs(RESULTS_DIR, exist_ok=True)
+    comparison_path = os.path.join(RESULTS_DIR, "results_pca_comparison.csv")
+    best_path = os.path.join(RESULTS_DIR, "results_pca_best_configs.csv")
 
     print(results_report_df)
-    results_report_df.to_csv("results_pca_comparison.csv", index=False)
-    print("Saved as results_pca_comparison.csv")
+    results_report_df.to_csv(comparison_path, index=False)
+    print(f"Saved as {comparison_path}")
 
-    best_report_df.to_csv("results_pca_best_configs.csv", index=False)
-    print("Saved as results_pca_best_configs.csv")
+    best_report_df.to_csv(best_path, index=False)
+    print(f"Saved as {best_path}")
     print("\nBest configuration per model and PCA condition:")
     print(best_report_df.to_string(index=False))
 

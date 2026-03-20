@@ -6,10 +6,10 @@ import numpy as np
 import pandas as pd
 
 
-RESULTS_FILE = "results_pca_comparison.csv"
-BEST_FILE = "results_pca_best_configs.csv"
+RESULTS_FILE = "results/initial/results_pca_comparison.csv"
+BEST_FILE = "results/initial/results_pca_best_configs.csv"
 DATASET_FILE = "MushroomDataset/secondary_data.csv"
-OUTPUT_DIR = "plots"
+OUTPUT_DIR = "plots/initial"
 
 
 def _load_csv(path_candidates):

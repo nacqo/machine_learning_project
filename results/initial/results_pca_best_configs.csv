@@ -1,0 +1,7 @@
+Model,Hyperparameters,PCA,Accuracy Mean,Accuracy Std,Balanced Accuracy Mean,F1-weighted Mean,F1-weighted Std,F1-macro Mean,Training Time Mean
+kNN,"n_neighbors=5, weights=uniform",No PCA,1.0,0.0,1.0,1.0,0.0,1.0,0.1186
+kNN,"n_neighbors=5, weights=uniform",With PCA,1.0,0.0,0.9999,1.0,0.0,1.0,0.1645
+Decision Tree,"random_state=42, max_depth=None, min_samples_leaf=1",No PCA,0.9985,0.0005,0.9985,0.9985,0.0005,0.9985,0.547
+Decision Tree,"random_state=42, max_depth=None, min_samples_leaf=1",With PCA,0.9928,0.0005,0.9928,0.9928,0.0005,0.9927,3.9171
+Logistic Regression,"max_iter=1000, random_state=42, C=1.0, class_weight=balanced",No PCA,0.8431,0.0029,0.8457,0.8435,0.0029,0.8423,1.0057
+Logistic Regression,"max_iter=1000, random_state=42, C=2.0",With PCA,0.7941,0.0019,0.7924,0.7942,0.002,0.7919,0.2936

@@ -1,4 +1,5 @@
 import time
+import os
 import numpy as np
 import pandas as pd
 
@@ -87,5 +88,6 @@ if __name__ == "__main__":
     print(results_df.to_string(index=False))
 
     # Optionally, save to CSV for use in your report
-    results_df.to_csv("pca_results.csv", index=False)
+    os.makedirs("results/initial", exist_ok=True)
+    results_df.to_csv("results/initial/pca_results.csv", index=False)
 
