@@ -1,0 +1,2 @@
+lr,l2,n_epochs,batch_size,final_train_loss,final_val_loss,final_test_loss,train_accuracy,val_accuracy,test_accuracy,train_time_seconds
+0.1,0.0,80,4096,0.33462662393321785,0.32948332227469973,0.33937634469840944,0.8584099778936164,0.8638447682986736,0.85917799246766,1.7798588275909424
